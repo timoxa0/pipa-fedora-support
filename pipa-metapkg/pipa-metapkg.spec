@@ -16,3 +16,4 @@ Requires: bootmac
 %description
 Xiaomi Pad 6 support meta packges
 
+%files
