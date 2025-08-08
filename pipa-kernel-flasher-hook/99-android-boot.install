@@ -19,8 +19,9 @@ command -v mkbootimg > /dev/null 2>&1 || exit 0
 [ "$COMMAND" != "add" ] && exit 0
 
 log() {
-    [ "$KERNEL_INSTALL_VERBOSE" -gt 0 ] && \
+    if [ "$KERNEL_INSTALL_VERBOSE" -gt 0 ]; then
         printf 'android-boot: %s\n' "$*"
+    fi
 }
 
 log "Building android boot for $KERNEL_VERSION"
