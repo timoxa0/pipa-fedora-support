@@ -32,7 +32,7 @@ for firmware in $(cat %{SOURCE2}); do
 done
 
 for firmware in $(cat %{SOURCE3}); do
-	install -Dm644 ${firmware} "$pkgdir/${firmware}"
+	install -Dm644 ${firmware} "%{buildroot}/${firmware}"
 done
 
 for firmware in $(cat %{SOURCE4}); do
