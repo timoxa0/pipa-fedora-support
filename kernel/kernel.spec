@@ -60,7 +60,7 @@ cp .config %{buildroot}/boot/config-$kernel_version
 
 make EXTRAVERSION="-%{release}" modules_install INSTALL_MOD_PATH=%{buildroot}/usr
 cp arch/arm64/boot/dts/qcom/sm8250-xiaomi-pipa.dtb %{buildroot}/usr/lib/modules/$kernel_version/devicetree
-ln -s ./devicetree arch/arm64/boot/dts/qcom/sm8250-xiaomi-pipa.dtb %{buildroot}/usr/lib/modules/$kernel_version/dtb
+ln -s ./devicetree %{buildroot}/usr/lib/modules/$kernel_version/dtb
 cp arch/arm64/boot/Image.gz %{buildroot}/usr/lib/modules/$kernel_version/vmlinuz
 make EXTRAVERSION="-%{release}" headers_install INSTALL_HDR_PATH=%{buildroot}/usr
 rm %{buildroot}/usr/lib/modules/%{version}*/build
