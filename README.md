@@ -29,7 +29,7 @@ Packages are available on the [pipa-support copr repo](https://copr.fedorainfrac
 ## bootmac
 Provides bootloader MAC address configuration utilities.
 
-**Files:**
+### Files:
 ```
 bootmac/
 └── bootmac.spec
@@ -39,7 +39,7 @@ bootmac/
 ## hexagonrpc
 Hexagon RPC daemon and related systemd services for DSP communication. Includes udev rules and systemd service files for ADSP and SDSP.
 
-**Files:**
+### Files:
 ```
 hexagonrpc/
 ├── 10-fastrpc.rules
@@ -54,7 +54,7 @@ hexagonrpc/
 ## iio-sensor-proxy
 Sensor proxy with patches for SSC sensors (proximity, light, accelerometer, compass). Includes integration tests and systemd service modifications.
 
-**Files:**
+### Files:
 ```
 iio-sensor-proxy/
 ├── 0001-iio-sensor-proxy-depend-on-libssc.patch
@@ -73,7 +73,7 @@ iio-sensor-proxy/
 ## kernel
 Custom kernel configuration and patches for Xiaomi Pad 6 support. Includes touchpad and other device-specific patches.
 
-**Files:**
+### Files:
 ```
 kernel/
 ├── add-touchpad-button-event.patch
@@ -85,7 +85,7 @@ kernel/
 ## libssc
 Library for SSC (Sensor Subsystem Communication).
 
-**Files:**
+### Files:
 ```
 libssc/
 └── libssc.spec
@@ -95,7 +95,7 @@ libssc/
 ## pipa-dracut
 Dracut module for Xiaomi Pad 6 boot support. Includes custom module setup script.
 
-**Files:**
+### Files:
 ```
 pipa-dracut/
 ├── module-setup.sh
@@ -106,7 +106,7 @@ pipa-dracut/
 ## pipa-kernel-flasher-hook
 Hook scripts for kernel flashing and boot installation.
 
-**Files:**
+### Files:
 ```
 pipa-kernel-flasher-hook/
 ├── 99-android-boot.install
@@ -117,7 +117,7 @@ pipa-kernel-flasher-hook/
 ## pipa-metapkg
 Metapackage for installing all required components for Xiaomi Pad 6.
 
-**Files:**
+### Files:
 ```
 pipa-metapkg/
 └── pipa-metapkg.spec
@@ -127,7 +127,7 @@ pipa-metapkg/
 ## pipa-sensors
 Sensor configuration files and rules for Xiaomi Pad 6 sensors. Includes udev rules and DSP configuration.
 
-**Files:**
+### Files:
 ```
 pipa-sensors/
 ├── 81-libssc-xiaomi-pipa.rules
@@ -139,7 +139,7 @@ pipa-sensors/
 ## pipa-sound-conf
 Audio configuration files for Xiaomi Pad 6. Includes multiple sound configuration files for different use cases.
 
-**Files:**
+### Files:
 ```
 pipa-sound-conf/
 ├── 51-pipa.conf
@@ -152,7 +152,7 @@ pipa-sound-conf/
 ## qbootctl
 Boot control utility and systemd service for boot management.
 
-**Files:**
+### Files:
 ```
 qbootctl/
 ├── qbootctl-mark-bootable.service
@@ -163,7 +163,7 @@ qbootctl/
 ## qrtr
 QRTR (Qualcomm IPC Router) utilities and patches.
 
-**Files:**
+### Files:
 ```
 qrtr/
 ├── README.md
@@ -175,7 +175,7 @@ qrtr/
 ## xiaomi-pipa-firmware
 Firmware blobs for various components (audio, DSP, touchscreen, etc.). Includes file lists for each firmware type.
 
-**Files:**
+### Files:
 ```
 xiaomi-pipa-firmware/
 ├── awinic_firmware.files
